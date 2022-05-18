@@ -4,49 +4,17 @@
   
     
     <entry>
-      <title>demo</title>
-      <link href="/2022/05/18/demo/"/>
-      <url>/2022/05/18/demo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>使用github搭建hexo博客</title>
       <link href="/2022/05/18/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/"/>
       <url>/2022/05/18/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
       
-        <content type="html"><![CDATA[<p><strong>所有命令建议使用 <code>git bash</code>来执行</strong></p><h3 id="一些准备"><a href="#一些准备" class="headerlink" title="一些准备"></a>一些准备</h3><h4 id="下载并安装node-js"><a href="#下载并安装node-js" class="headerlink" title="下载并安装node.js:"></a>下载并安装node.js:</h4><ul><li>官网：<a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li></ul><p><img src="C:\Users\86199\AppData\Roaming\Typora\typora-user-images\image-20220518213317172.png" alt="image-20220518213317172"></p><ul><li>执行命令 <code>node -v</code>验证是否安装成功</li></ul><h4 id="安装cnpm："><a href="#安装cnpm：" class="headerlink" title="安装cnpm："></a>安装cnpm：</h4><ul><li>执行命令 <code>npm install -g cnpm --registry==https://registry.npm.taobao.org </code> 安装</li><li>执行<code>cnpm -v</code>验证是否安装成功</li></ul><h4 id="安装hexo框架："><a href="#安装hexo框架：" class="headerlink" title="安装hexo框架："></a>安装hexo框架：</h4><ul><li><p>命令：<code>cnpm install -g hexo-cli </code></p></li><li><p>执行 <code>hexo -v</code>验证</p></li></ul><h3 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h3><ul><li><p>新建文件夹：<code>mkdir blog</code></p><p>所有博客将在此文件中生成，如果博客搭建过程有问题，直接删除该文件重新来即可。</p></li><li><p>进入blog文件夹：<code>cd blog </code></p></li><li><p>初始化博客：<code>hexo init blog</code></p><p>此时blog文件夹的内容为<code>hexo</code>框架的基础内容</p></li></ul><p><img src="C:\Users\86199\AppData\Roaming\Typora\typora-user-images\image-20220518220836921.png" alt="image-20220518220836921"></p><ul><li>启动博客：<code>hexo s</code></li></ul><p><img src="C:\Users\86199\AppData\Roaming\Typora\typora-user-images\image-20220518221052975.png" alt="image-20220518221052975"></p><p>此时将会在 <code>localhost:4000端口</code>启动，浏览器输入 <code>localhost:4000</code>即可查看</p><ul><li><p>新建博客：<code>hexo n 文章名称</code></p></li><li><p>给博客加内容： <code>cd source/_posts/</code> 、<code>vim 文章名称.md</code></p><p>输入内容：因为是基于<code>markdown</code>的，所以也可以直接用 <code>Typora</code>打开博客编辑</p><p><img src="C:\Users\86199\AppData\Roaming\Typora\typora-user-images\image-20220518222208413.png" alt="image-20220518222208413"></p></li></ul><h3 id="将博客部署到github上"><a href="#将博客部署到github上" class="headerlink" title="将博客部署到github上"></a>将博客部署到github上</h3><ul><li><p>打开github：</p><p>新建仓库：</p></li></ul><p><img src="C:\Users\86199\AppData\Roaming\Typora\typora-user-images\image-20220518223036138.png" alt="image-20220518223036138"></p><ul><li><p>安装git部署插件： <code>cnpm install --save hexo-deployer-git</code></p></li><li><p>设置_config.yml文件： <code>vim _config.yml</code></p><p>修改deployment如下</p><p><img src="C:\Users\86199\AppData\Roaming\Typora\typora-user-images\image-20220518223512149.png" alt="image-20220518223512149"></p></li><li><p>部署到远端：</p><p><code>git config --global user.email &quot;xxx&quot;</code></p><p><code>git config --global user.name &quot;xxx&quot;</code></p><p><code>hexo cl</code>清理</p><p><code>hexo g</code>生成</p><p><code>hexo d</code>部署到远程Github仓库</p></li></ul><h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>下次更新</p>]]></content>
+        <content type="html"><![CDATA[<p><strong>所有命令建议使用 <code>git bash</code>来执行</strong></p><h3 id="一些准备"><a href="#一些准备" class="headerlink" title="一些准备"></a>一些准备</h3><h4 id="下载并安装node-js"><a href="#下载并安装node-js" class="headerlink" title="下载并安装node.js:"></a>下载并安装node.js:</h4><ul><li><p>官网：<a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p><img src="/2022/05/18/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/image-20220518213317172.png" class></li><li><p>执行命令 <code>node -v</code>验证是否安装成功</p></li></ul><h4 id="安装cnpm："><a href="#安装cnpm：" class="headerlink" title="安装cnpm："></a>安装cnpm：</h4><ul><li>执行命令 <code>npm install -g cnpm --registry==https://registry.npm.taobao.org </code> 安装</li><li>执行<code>cnpm -v</code>验证是否安装成功</li></ul><h4 id="安装hexo框架："><a href="#安装hexo框架：" class="headerlink" title="安装hexo框架："></a>安装hexo框架：</h4><ul><li><p>命令：<code>cnpm install -g hexo-cli </code></p></li><li><p>执行 <code>hexo -v</code>验证</p></li></ul><h3 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h3><ul><li><p>新建文件夹：<code>mkdir blog</code></p><p>所有博客将在此文件中生成，如果博客搭建过程有问题，直接删除该文件重新来即可。</p></li><li><p>进入blog文件夹：<code>cd blog </code></p></li><li><p>初始化博客：<code>hexo init blog</code></p><p>此时blog文件夹的内容为<code>hexo</code>框架的基础内容</p><img src="/2022/05/18/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/image-20220518220836921.png" class></li><li><p>启动博客：<code>hexo s</code></p><img src="/2022/05/18/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/image-20220518221052975.png" class></li></ul><p>此时将会在 <code>localhost:4000端口</code>启动，浏览器输入 <code>localhost:4000</code>即可查看</p><ul><li><p>新建博客：<code>hexo n 文章名称</code></p></li><li><p>给博客加内容： <code>cd source/_posts/</code> 、<code>vim 文章名称.md</code></p><p>输入内容：因为是基于<code>markdown</code>的，所以也可以直接用 <code>Typora</code>打开博客编辑</p><img src="/2022/05/18/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/image-20220518222208413.png" class></li></ul><h3 id="将博客部署到github上"><a href="#将博客部署到github上" class="headerlink" title="将博客部署到github上"></a>将博客部署到github上</h3><ul><li><p>打开github：</p><p>新建仓库：</p></li><li><p>安装git部署插件： <code>cnpm install --save hexo-deployer-git</code></p></li><li><p>设置_config.yml文件： <code>vim _config.yml</code></p><p>修改deployment如下</p><img src="/2022/05/18/%E4%BD%BF%E7%94%A8github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/image-20220518223512149.png" class></li><li><p>部署到远端：</p><p><code>git config --global user.email &quot;xxx&quot;</code></p><p><code>git config --global user.name &quot;xxx&quot;</code></p><p><code>hexo cl</code>清理</p><p><code>hexo g</code>生成</p><p><code>hexo d</code>部署到远程Github仓库</p></li></ul><h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>下次更新</p>]]></content>
       
       
       
         <tags>
             
             <tag> 乱七八糟 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Chrome调试工具</title>
-      <link href="/2022/05/11/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
-      <url>/2022/05/11/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> CSS基础 </tag>
             
         </tags>
       
